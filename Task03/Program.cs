@@ -36,4 +36,4 @@ else if (day == "7")
 else
 {
     Console.WriteLine("Некоректный ввод");
-}    
+}
