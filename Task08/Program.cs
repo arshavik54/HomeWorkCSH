@@ -9,19 +9,19 @@ Console.WriteLine("Введите число > 0");
 int number = Convert.ToInt32(Console.ReadLine());
 int count = 2;
 
-if (count <= number) 
-    
+if (count <= number)   
 {
-    
-    while 
-          count % 2 == 0;
-          count += 2;
+    while (count % 2 == 0)
     {
-      
-    
+          count += 2;
+          Console.Write($"{count} "); 
+        
+    {  
+Break;         
+
     }
-    Console.Write($"{count} ");
-    Break;
+    
+   
 }
 else
     Console.WriteLine("Некорректный ввод");
