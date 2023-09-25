@@ -16,25 +16,3 @@ if (count <= number)
           count += 2;
           Console.Write($"{count} "); 
         
-    {  
-Break;         
-
-    }
-    
-   
-}
-else
-    Console.WriteLine("Некорректный ввод");
-
-
-
-
-
-
-
-//     count += 1;
-// }
-// 
-// {
-//     Console.Write($"{count} ");
-// }
