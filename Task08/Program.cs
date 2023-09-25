@@ -7,22 +7,34 @@
 
 Console.WriteLine("Введите число > 0");
 int number = Convert.ToInt32(Console.ReadLine());
+int count = 2;
 
-if (number > 0) ;
-int count = 1;
+if (count <= number) 
+    
 {
-     while (count < number)
-     {
-        count % 2 == 1;
-        count += 1;
-     }
+    
+    while 
+          count % 2 == 0;
+          count += 2;
+    {
+      
+    
+    }
+    Console.Write($"{count} ");
+    Break;
 }
-else 
-{
-Console.Write($"{count} ");   
-}
- 
+else
+    Console.WriteLine("Некорректный ввод");
 
 
 
 
+
+
+
+//     count += 1;
+// }
+// 
+// {
+//     Console.Write($"{count} ");
+// }
