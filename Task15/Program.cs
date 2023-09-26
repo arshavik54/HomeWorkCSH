@@ -12,7 +12,7 @@ int Prompt (string message)
     int result = Convert.ToInt32(value);
     return result;
 }
-bool IsWeekend(int weekDay);
+bool IsWeekend(int weekDay)
 {
     if (weekDay > 5)
     {
