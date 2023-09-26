@@ -7,12 +7,14 @@
 
 Console.WriteLine("Введите число > 0");
 int number = Convert.ToInt32(Console.ReadLine());
-int count = 2;
+int count = 4;
 
 if (count <= number)   
 {
-    while (count % 2 == 0)
+    while (count / 2 == 0)
     {
-          count += 2;
-          Console.Write($"{count} "); 
-        
+        Console.Write($"{count} "); 
+        count += 2;
+        break;
+    }
+}    
