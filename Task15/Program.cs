@@ -27,7 +27,7 @@ bool ValidateWeekday(int number)
     {
          return true;
     }   
-    Console.WriteLine("Это не день недели");
+    Console.WriteLine("Это не день недели!");
     return false;
 }
 int weekDay = Prompt("Введите день недели >");
