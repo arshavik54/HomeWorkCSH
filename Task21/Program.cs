@@ -38,10 +38,18 @@ Console.WriteLine(Math.Round(result, 2));
 //  int x1 = ("Координаты точки A\nВведите координаты X");
 //  int x2 = ("Координаты точки B\nВведите координаты Y");
 
-// double result = Length(x1, x2, x3, y1, y2, y3);
-// int[] Lenght = {};
-// int index = 0;
-// int count = 6;
+
+//                      0   1   2  3   4    5
+double result = Length(x1, x2, x3, y1, y2, y3);
+int[] Lenght = {5};
+int index = 0;
+int count = 5;
+{
+  if (index < count);
+    count[i]- 
+}
+
+
 
 // double result = Distance(x1, y1, x2, y2, z1, z2);
 // Console.WriteLine(Math.Pow(result, 2));
@@ -53,4 +61,7 @@ Console.WriteLine(Math.Round(result, 2));
         // result = (new int[]{x1, x2, x3}, new int[]{y1, y2, y3});
         // Console.WriteLine($"{result:F2}");
 
-  int Lenght;
+Double[] Length(new int)
+
+
+ 

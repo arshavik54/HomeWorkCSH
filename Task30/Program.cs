@@ -10,7 +10,7 @@ int[] RandomArray(int arrLength)
     Random rand = new Random();
     for (int i = 0; i < arrLength; i++)
     {
-        arr[i] = new Random().Next(2);
+        arr[i] = rand.Next(2);
     }
     return arr;
 }
@@ -27,12 +27,12 @@ void PrintArray(int[] array)
 
 void PrintArray2(int[] array)
 {
-    Console.WriteLine("[");
+    Console.Write("[");
     for (int i = 0; i < array.Length; i++)
     {
         if (i < array.Length - 1)
         {
-            Console.WriteLine($"{array[i]}, ");
+            Console.Write($"{array[i]}, ");
         }
         else
         {

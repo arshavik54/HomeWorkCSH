@@ -27,9 +27,15 @@ void PrintArray2(int[] array)
         }
         else 
         {
-            Console.Write($"{array[i]} -> [{RandomArray}]");
+            Console.Write($"{array[i]}");
         } 
+
     }
 }
 int[] arr = RandomArray(8);
+
+
 PrintArray2(arr);
+Console.Write(" -> [");
+PrintArray2(arr);
+Console.WriteLine("]");
