@@ -6,66 +6,67 @@
 // положительных чисел равна 29, сумма отрицательных равна
 // -20.
 
-CreateArrarRndint(int size, int min, int max)
-{
-int[] arr = new int[size];
-Random rnd = new Random();
+int CreateArrarRndint(int size, int min, int max)
 
-for (int i = 0; i < size; i++)
 {
-arr[i] = rnd.Next(min, max + 1);
-}
+    int[] arr = new int[size];
+    Random rnd = new Random();
 
-return arr;
+    for (int i = 0; i < size; i++)
+    {
+        arr[i] = rnd.Next(min, max + 1);
+    }
+
+    return arr;
 }
 
 void PrintArray(int[] arr)
 {
-Console.Write("[");
-for (int i = 0; i < arr.Length; i++)
-{
-if(i < arr.Length - 1) Console.Write($"{arr[i]}, ");
-else Console.Write($"{arr[i]}");
-}
-Console.WriteLine("]");
+    Console.Write("[");
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
+        else Console.Write($"{arr[i]}");
+    }
+    Console.WriteLine("]");
 }
 
 int[] GetSumPositiveNegativeElem(int[] arr)
 {
-int sumPositive = 0;
-int sumNegative = 0;
+    int sumPositive = 0;
+    int sumNegative = 0;
 
-for (int i = 0; i < arr.Length; i++)
-{
-if(arr[i] > 0) sumPositive += arr[i];
-else sumNegative += arr[i];
-}
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i] > 0) sumPositive += arr[i];
+        else sumNegative += arr[i];
+    }
 
-return new int[] {sumPositive, sumNegative};
+    return new int[] { sumPositive, sumNegative };
 }
 
 int GetSumPositiveElem(int[] arr)
 {
-int sum = 0;
+    int sum = 0;
 
-for (int i = 0; i < arr.Length; i++)
-{
-if(arr[i] > 0) sum += arr[i];
-}
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i] > 0) sum += arr[i];
+    }
 
-return sum;
+    return sum;
 }
 
 int GetSumNegativeElem(int[] arr)
 {
-int sum = 0;
+    int sum = 0;
 
-for (int i = 0; i < arr.Length; i++)
-{
-if(arr[i] < 0) sum += arr[i];
-}
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (arr[i] < 0) sum += arr[i];
+    }
 
-return sum;
+    return sum;
 }
 
 int[] array = CreateArrarRndint(12, -9, 9);
