@@ -27,15 +27,16 @@ Console.Write($"{arr[^1]}");// ^1 последний элемент массив
 int EvenDigits(int[] arr)
 {    
 int count = 0;    
-for (int i = 0; i < arr.Length; i++);
+for (int i = 0; i < arr.Length; i++)
 {
 if (arr[i] % 2 == 0) count ++;
 }
 return count;
 }  
 
+Console.Write("[");
 int[] randArr = CreateCustomArray(4, 100, 999);
 PrintOut(randArr);
 int result = EvenDigits(randArr);
-Console.WriteLine($" -> {result}");
+Console.WriteLine($"]-> {result}");
 
