@@ -6,8 +6,8 @@
 
 int GetUserInputInt(string msg)
 {
-    Write(msg);
-    int intNum = Convert.ToInt32(ReadLine());
+    Console.Write(msg);
+    int intNum = Convert.ToInt32(Console.ReadLine());
     return intNum;
 }
 
@@ -25,24 +25,24 @@ void PrintArray(double[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
-        Write(i == arr.Length - 1 ? $"{arr[i]})" : $"({arr[i]}; ");
+        Console.Write(i == arr.Length - 1 ? $"{arr[i]})" : $"({arr[i]}; ");
     }
 }
 
-WriteLine("Программа для определения точки пересечения двух прямых вида y = kx + b");
-WriteLine("");
-double k01 = GetUserInputInt("Для первой прямой введите угловой коэффициент k1: ");
-double b01 = GetUserInputInt("Для первой прямой введите коэффициент b1: ");
-double k02 = GetUserInputInt("Для второй прямой введите угловой коэффициент k2: ");
-double b02 = GetUserInputInt("Для второй прямой введите коэффициент b2: ");
+Console.WriteLine("Программа для определения точки пересечения двух прямых вида y = kx + b");
+Console.WriteLine("");
+double k01 = GetUserInputInt("Для первой прямой введите k1: ");
+double b01 = GetUserInputInt("Для первой прямой введите b1: ");
+double k02 = GetUserInputInt("Для второй прямой введите k2: ");
+double b02 = GetUserInputInt("Для второй прямой введите b2: ");
 
-if (k01 == k02 && b01 == b02) WriteLine("Прямые совпадают");
-else if (k01 == k02) WriteLine("Прямые параллельны и не имеют точек пересечения");
+if (k01 == k02 && b01 == b02)  Console.WriteLine("Прямые совпадают");
+else if (k01 == k02)  Console.WriteLine("Прямые параллельны и не имеют точек пересечения");
 else 
 {
-    WriteLine("");    
+     Console.WriteLine("");    
     double[] resultPoint = PointOfIntersect(k01, b01, k02, b02);
-    Write($"k1 = {k01}, b1 = {b01}, k2 = {k02}, b2 = {b02} -> ");
+     Console.Write($"k1 = {k01}, b1 = {b01}, k2 = {k02}, b2 = {b02} -> ");
     PrintArray(resultPoint);
 }
 

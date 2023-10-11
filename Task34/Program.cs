@@ -14,7 +14,6 @@ for (int i =0; i < size; i++){
 }
 return arr;
 }
-
 void PrintOut(int[] arr)
 {
 for (int i = 0; i < arr.Length - 1; i++)

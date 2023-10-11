@@ -43,3 +43,18 @@ void PrintArrayDouble(double[] arr)
     }
     Console.Write($"{arr[^1]}]:F1 {MaxDigit} - {MinDigit} -> {Difference}");// ^1 последний элемент массива
 }
+
+
+double[] CreateArrarRndDouble(int size, int min, int max)
+{
+    double[] arr = new double[size];
+    Random rnd = new Random();
+
+    for (int i = 0; i < size; i++)
+    {
+        arr[i] = rnd.NextDouble() * (max - min) + min;
+    }
+
+    return arr;
+}
+
