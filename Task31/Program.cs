@@ -6,7 +6,7 @@
 // положительных чисел равна 29, сумма отрицательных равна
 // -20.
 
-int CreateArrarRndint(int size, int min, int max)
+int[] CreateArrarRndint(int size, int min, int max)
 
 {
     int[] arr = new int[size];
@@ -16,7 +16,6 @@ int CreateArrarRndint(int size, int min, int max)
     {
         arr[i] = rnd.Next(min, max + 1);
     }
-
     return arr;
 }
 
